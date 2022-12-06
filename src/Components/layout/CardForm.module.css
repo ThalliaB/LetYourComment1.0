@@ -1,31 +1,31 @@
-.home_container {
+.card_container {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.home_container > table {
-    border: 1px solid #000;
+.card_container > table {
     border-radius: 5px;
     padding: 20px;
     width: 70vw;
+    background-color: #45F5A3;
 }
 
-.home_container > table > tr > th {
+.card_container > table > tr > th {
     padding: 20px;
     padding-right: 40px;
 }
 
-.home_container > table > tr > th:first-child{
-    border-right: 1px solid #000;
+.card_container > table > tr > th:first-child{
+    border-right: 1px solid rgb(88, 78, 78);
 }
 
-.home_container > table > tr > th > img{
+.card_container > table > tr > th > img{
     width: 150px;
     margin-top: 20px;
 }
 
-.home_container > table > tr > th:last-child {
+.card_container > table > tr > th:last-child {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,15 +34,16 @@
     margin: 0;
 }
 
-.home_container > table > tr > th > input {
+.card_container > table > tr > th > input {
     line-height: 2em;
     font-size: 16px;
     width: 300px;
     padding-left: 5px;
     border-radius: 5px;
+    border:none;
 }
 
-.home_container > table > tr > th > textarea {
+.card_container > table > tr > th > textarea {
     max-width: 300px;
     min-width: 300px;
     height: 150px;
@@ -51,17 +52,21 @@
     padding-left: 5px;
     margin-top: 10px;
     border-radius: 5px;
+    border:none;
 }
 
-.home_container > table > tr > th > button {
+.card_container > table > tr > th > button {
     width: 300px;
     margin-top: 20px;
     font-size: 16px;
-    padding: 2px 0 2px 0;
+    padding: 3px 0 ;
     border-radius: 5px;
     transition: .3s;
+    border:none;
+    background-color: #F55DB2;
 }
 
-.home_container > table > tr > th > button:hover {
+.card_container > table > tr > th > button:hover {
     cursor: pointer;
+    background-color: #fc43ac;
 }
