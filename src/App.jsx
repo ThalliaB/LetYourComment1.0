@@ -1,17 +1,19 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-
+import Divisor from "./Components/layout/Divisor";
+import Footer from "./Components/layout/Footer";
+import Header from "./Components/layout/Header";
 import Home from "./Components/pages/Home";
 
 function App() {
   return (
-    // <header>
-    //   <h1>LetYourComment</h1>
-    // </header>
     <Router>
-      <h1>LetYourComment</h1>
+      <Header />
+      <Divisor/>
       <Routes> 
         <Route path="/" element={<Home/>}/>
-      </Routes> 
+      </Routes>
+      <Divisor/>
+      <Footer/> 
     </Router>
   )
 }
