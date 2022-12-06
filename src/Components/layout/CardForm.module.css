@@ -1,0 +1,67 @@
+.home_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.home_container > table {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 20px;
+    width: 70vw;
+}
+
+.home_container > table > tr > th {
+    padding: 20px;
+    padding-right: 40px;
+}
+
+.home_container > table > tr > th:first-child{
+    border-right: 1px solid #000;
+}
+
+.home_container > table > tr > th > img{
+    width: 150px;
+    margin-top: 20px;
+}
+
+.home_container > table > tr > th:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 200px; */
+    margin: 0;
+}
+
+.home_container > table > tr > th > input {
+    line-height: 2em;
+    font-size: 16px;
+    width: 300px;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+.home_container > table > tr > th > textarea {
+    max-width: 300px;
+    min-width: 300px;
+    height: 150px;
+    line-height: 1.5em;
+    font-size: 16px;
+    padding-left: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.home_container > table > tr > th > button {
+    width: 300px;
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 2px 0 2px 0;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.home_container > table > tr > th > button:hover {
+    cursor: pointer;
+}
