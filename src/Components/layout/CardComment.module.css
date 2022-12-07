@@ -5,10 +5,10 @@
     align-items: center;
     margin: 1em 0;
 }
-
+/* 
 .comment_container>div:nth-child(2n){
     background-color: #F55DB2;
-}
+} */
 
 .comment_container > div{
     border-radius: 5px;
