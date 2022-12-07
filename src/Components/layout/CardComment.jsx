@@ -35,10 +35,6 @@ function CardComment(){
                 </div> 
                 )
             })}
-            {/* <div>
-                <h3>Nome</h3>
-                <p>Comentario Comentario Comentario Comentario Comentario Comentario Comentario Comentario Comentario</p>
-            </div> */}
         </section>
     )
 }

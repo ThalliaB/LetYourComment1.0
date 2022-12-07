@@ -4,69 +4,67 @@
     justify-content: center;
 }
 
-.card_container > table {
+.card_container > div {
     border-radius: 5px;
     padding: 20px;
-    width: 70vw;
     background-color: #45F5A3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 60vw;
 }
 
-.card_container > table > tr > th {
+.card_container > div > div  {
     padding: 20px;
-    padding-right: 40px;
+    text-align: center;
 }
 
-.card_container > table > tr > th:first-child{
-    border-right: 1px solid rgb(88, 78, 78);
-}
-
-.card_container > table > tr > th > img{
+.card_container > div > div > img{
     width: 150px;
     margin-top: 20px;
 }
 
-.card_container > table > tr > th:last-child {
+.card_container > div > div:last-child {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
-    /* max-width: 200px; */
     margin: 0;
 }
 
-.card_container > table > tr > th > input {
-    line-height: 2em;
-    font-size: 16px;
-    width: 300px;
+.card_container > div > div > input{
+    line-height: 1.4em;
+    font-size: 1.2em;
+    width: 100%;
     padding-left: 5px;
     border-radius: 5px;
     border:none;
 }
 
-.card_container > table > tr > th > textarea {
-    max-width: 300px;
-    min-width: 300px;
-    height: 150px;
-    line-height: 1.5em;
-    font-size: 16px;
+.card_container > div > div > textarea {
+    max-width: 100%;
+    min-width: 100%;
+    height: 9em;
+    line-height: 1.4em;
+    font-size: 1.2em;
     padding-left: 5px;
     margin-top: 10px;
     border-radius: 5px;
     border:none;
 }
 
-.card_container > table > tr > th > button {
-    width: 300px;
-    margin-top: 20px;
-    font-size: 16px;
-    padding: 3px 0 ;
-    border-radius: 5px;
-    transition: .3s;
-    border:none;
+.card_container > div > div > button {
     background-color: #F55DB2;
+    border:none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 20px;
+    padding: 3px 0 ;
+    transition: .3s;
+    width: 100%;
 }
 
-.card_container > table > tr > th > button:hover {
-    cursor: pointer;
+.card_container > div > div > button:hover {
     background-color: #fc43ac;
+    cursor: pointer;
 }

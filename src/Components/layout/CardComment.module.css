@@ -1,19 +1,15 @@
 .comment_container {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     margin: 1em 0;
 }
-/* 
-.comment_container>div:nth-child(2n){
-    background-color: #F55DB2;
-} */
 
 .comment_container > div{
+    background-color: #F5812C;
     border-radius: 5px;
+    margin: 12px;
     padding: 20px;
     width: 70vw;
-    background-color: #F5812C;
-    margin: 12px;
 }
