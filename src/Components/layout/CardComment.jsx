@@ -1,19 +1,12 @@
 import styles from "./CardComment.module.css"
-import { initializeApp } from "firebase/app"
-import { getFirestore, getDocs, collection } from "firebase/firestore"
+import { getDocs, collection } from "firebase/firestore"
 import { useEffect, useState } from "react";
+import { db } from "../../firebaseConfig";
 
 function CardComment(){
 
-    const firebaseApp = initializeApp({
-        apiKey: "AIzaSyCby7tmWVQQwMRZqpioPNx7X5peKmktMUY",
-        authDomain: "letyourcomment.firebaseapp.com",
-        projectId: "letyourcomment",
-      });
-
       const [users, setUsers] = useState([]);
 
-      const db = getFirestore(firebaseApp);
       const userColectionRef = collection(db, "users");
 
       useEffect(() => {

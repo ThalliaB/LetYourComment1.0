@@ -8,9 +8,8 @@ function Home() {
         <body>
             <CardForm/>
             <Divisor/>
-            <h2 className={styles.h2}>Veja alguns comentários</h2>
+            <h2 className={styles.h2}>See some comments</h2>
             <CardComment/>
-            {/* <CardComment/> */}
         </body>
     )
 }
