@@ -1,7 +1,6 @@
 import image from '../../img/image.svg';
 import styles from "./CardForm.module.css";
 
-// import { initializeApp } from "firebase/app"
 import { collection, addDoc } from "firebase/firestore"
 import { useState } from "react";
 import { db } from "../../firebaseConfig"
@@ -11,7 +10,6 @@ function CardForm() {
       const [name, setName] = useState("");
       const [comment, setComment] = useState("");
 
-    //   const database = getFirestore(db);
       const userColectionRef = collection(db, "users");
 
       async function CreateUser(){
