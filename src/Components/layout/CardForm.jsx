@@ -1,22 +1,17 @@
 import image from '../../img/image.svg';
 import styles from "./CardForm.module.css";
 
-import { initializeApp } from "firebase/app"
-import { getFirestore, collection, addDoc } from "firebase/firestore"
+// import { initializeApp } from "firebase/app"
+import { collection, addDoc } from "firebase/firestore"
 import { useState } from "react";
+import { db } from "../../firebaseConfig"
 
 function CardForm() {
-
-    const firebaseApp = initializeApp({
-        apiKey: "AIzaSyCby7tmWVQQwMRZqpioPNx7X5peKmktMUY",
-        authDomain: "letyourcomment.firebaseapp.com",
-        projectId: "letyourcomment",
-      });
 
       const [name, setName] = useState("");
       const [comment, setComment] = useState("");
 
-      const db = getFirestore(firebaseApp);
+    //   const database = getFirestore(db);
       const userColectionRef = collection(db, "users");
 
       async function CreateUser(){
