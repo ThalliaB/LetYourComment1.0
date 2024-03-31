@@ -8,12 +8,12 @@ function App() {
   return (
     <Router>
       <Header />
-      <Divisor/>
-      <Routes> 
-        <Route path="/" element={<Home/>}/>
+      <Divisor />
+      <Routes>
+        <Route path="/" element={<Home />} />
       </Routes>
-      <Divisor/>
-      <Footer/> 
+      <Divisor />
+      <Footer />
     </Router>
   )
 }

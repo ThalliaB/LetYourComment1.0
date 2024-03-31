@@ -7,17 +7,17 @@ import { db } from "../../firebaseConfig"
 
 function CardForm() {
 
-      const [name, setName] = useState("");
-      const [comment, setComment] = useState("");
+    const [name, setName] = useState("");
+    const [comment, setComment] = useState("");
 
-      const userColectionRef = collection(db, "users");
+    const userColectionRef = collection(db, "users");
 
-      async function CreateUser(){
+    async function CreateUser() {
         const user = await addDoc(userColectionRef, {
             name, comment,
         });
-        console.log(user);
-      }
+        window.location.reload();
+    }
 
 
     return (
@@ -25,14 +25,16 @@ function CardForm() {
 
             <div>
                 <div>
-                    <h3>Let your comment<br/> here, about my profile,<br/> codes...</h3>
+                    <h3>Let your comment<br /> here, about my profile,<br /> codes...</h3>
                     <img src={image} alt="LetYourComment" />
                 </div>
 
                 <div>
-                    <input type="text" placeholder="Name..." value={name} onChange={e => setName(e.target.value)}/>
+                    <input type="text" placeholder="Name..." value={name} onChange={e => setName(e.target.value)} />
                     <textarea type="text" placeholder="Let your comment, please." value={comment} onChange={e => setComment(e.target.value)}></textarea>
+                    {/* <button onClick={CreateUser}>Publish</button> */}
                     <button onClick={CreateUser}>Publish</button>
+                    {/* <Link onClick={CreateUser} to='/'>Publish</Link> */}
                 </div>
             </div>
 

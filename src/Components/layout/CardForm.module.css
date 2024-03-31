@@ -4,44 +4,44 @@
     justify-content: center;
 }
 
-.card_container > div {
+.card_container>div {
     border-radius: 5px;
-    padding: 20px;
     background-color: #45F5A3;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 20px;
     width: 60vw;
 }
 
-.card_container > div > div  {
+.card_container>div>div {
     padding: 20px;
     text-align: center;
 }
 
-.card_container > div > div > img{
+.card_container>div>div>img {
     width: 150px;
     margin-top: 20px;
 }
 
-.card_container > div > div:last-child {
+.card_container>div>div:last-child {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     margin: 0;
 }
 
-.card_container > div > div > input{
+.card_container>div>div>input {
     line-height: 1.4em;
     font-size: 1.2em;
     width: 100%;
     padding-left: 5px;
     border-radius: 5px;
-    border:none;
+    border: none;
 }
 
-.card_container > div > div > textarea {
+.card_container>div>div>textarea {
     max-width: 100%;
     min-width: 100%;
     height: 9em;
@@ -50,21 +50,21 @@
     padding-left: 5px;
     margin-top: 10px;
     border-radius: 5px;
-    border:none;
+    border: none;
 }
 
-.card_container > div > div > button {
+.card_container>div>div>button {
     background-color: #F55DB2;
-    border:none;
+    border: none;
     border-radius: 5px;
     font-size: 1.2em;
     margin-top: 20px;
-    padding: 3px 0 ;
+    padding: 3px 0;
     transition: .3s;
     width: 100%;
 }
 
-.card_container > div > div > button:hover {
+.card_container>div>div>button:hover {
     background-color: #fc43ac;
     cursor: pointer;
 }
